@@ -14,14 +14,10 @@ const saveJobApplication = (id) => {
         localStorage.setItem('job-Applications', JSON.stringify(storedJobApplications));
         return true; // Successfully saved
     }
+    return false; // Already exists
 }
 
-const getStoredJobApplications = () => {
 
 
-}
 
-const saveJobApplication = (id) => {
-
-}
 export { saveJobApplication}
